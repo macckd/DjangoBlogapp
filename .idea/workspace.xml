@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5db8910-52b3-4b7f-96c9-d7d9e60ac3bf" name="Default Changelist" comment="" />
+    <list default="true" id="b5db8910-52b3-4b7f-96c9-d7d9e60ac3bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adms/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +22,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1aOP29IYGTRcyPMFUAD719dxW0h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,6 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -187,10 +198,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="24" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1596174569028" />
-    <state x="462" y="108" key="FileChooserDialogImpl" timestamp="1596174533474">
+    <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596186169134">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596174533474" />
+    <state x="137" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1596186169134" />
+    <state x="462" y="108" key="FileChooserDialogImpl" timestamp="1596189227307">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596189227307" />
     <state x="509" y="280" key="Github.CreateGistDialog" timestamp="1596175152240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -227,10 +242,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1344" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592241507806" />
-    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596173995816">
+    <state x="186" y="0" key="SettingsEditor" timestamp="1596185560809">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596173995816" />
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596185560809" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596186471809">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596186471809" />
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596188912602">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596188912602" />
+    <state x="494" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596186388205">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="494" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1596186388205" />
     <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1596092577243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

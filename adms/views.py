@@ -336,8 +336,7 @@ def blogedit2(request, sno):
 
 
 
-def render_to_response(param, param1, context_instance):
-    pass
+
 
 
 
