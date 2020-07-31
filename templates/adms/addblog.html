@@ -1,0 +1,136 @@
+{% extends 'admsbase.html' %}
+
+{% block title %} Add Blog {% endblock title %}
+
+{% block css %}
+
+{% endblock %}
+{% load crispy_forms_tags %}
+  {% block body %}
+
+
+
+
+    <!-- Update form -->
+<div class='container my-3'>
+  <h3>Add Blog</h3>
+
+  <form method="POST"  action=" ">
+        {% csrf_token %}
+ <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" name="title" id="title" >
+  </div>
+  <div class="form-group">
+    <label for="author">Auther</label>
+    <input type="text" class="form-control" name="author" id="author">
+  </div>
+  <div class="form-group">
+    <label for="slug">vanity_url</label>
+    <input type="text" class="form-control" name="slug" id="slug">
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea class="form-control" name="content" id="content" rows="3"></textarea>
+  </div>
+
+    <div class="form-group">
+      <label for="image1">Image</label>
+      <div class="btn btn-online-primary">
+        <input class="form-control-btn btn-light" name="image" id="image1" type="file">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+    <button type="submit" value="upload" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+
+
+ </div>
+
+</form>
+
+
+<!--
+<form action="" method="POST">
+{% csrf_token %}
+
+{{ form.as_p }}
+
+<input type="submit" value="Add Post"/>
+</form>
+<br/><br/>-->
+
+
+ <!--<form action = "/adms/addblog" method = "post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-success">Save Blog</button>
+</form> -->
+<!--
+<form method="POST" class="post-form" action="/adms/admsblog">
+        {% csrf_token %}
+    <div class="container">
+<br>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <h3>Enter Details</h3>
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">title:</label>
+    <div class="col-sm-4">
+      {{ form.title }}
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">author:</label>
+    <div class="col-sm-4">
+      {{ form.author }}
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">slug:</label>
+    <div class="col-sm-4">
+      {{ form.slug }}
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">content:</label>
+    <div class="col-sm-4">
+      {{ form.content }}
+    </div>
+  </div>
+      <div class="form-group row">
+    <label class="col-sm-2 col-form-label">timeStamp:</label>
+    <div class="col-sm-4">
+      {{ form.timeStamp }}
+    </div>
+  </div>
+      <div class="form-group row">
+    <label class="col-sm-2 col-form-label">image:</label>
+    <div class="col-sm-4">
+      {{ form.image }}
+    </div>
+  </div>
+
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+    </div>
+</form>-->
+
+
+
+
+
+
+
+</div>
+
+{% endblock body%}

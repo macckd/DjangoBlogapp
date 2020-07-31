@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5db8910-52b3-4b7f-96c9-d7d9e60ac3bf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="icoder" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aOP29IYGTRcyPMFUAD719dxW0h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\clover project\blog\icoder\templates\fogot password" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\clover project\blog\icoder\templates\home" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.s">
+    <configuration name="kjn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="icoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home/kjn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="s" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="icoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="s1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="icoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home/s1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="icoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home/sam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="icoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/adms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adms/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.s" />
+        <item itemvalue="Python.kjn" />
+        <item itemvalue="Python.s1" />
+        <item itemvalue="Python.sam" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5db8910-52b3-4b7f-96c9-d7d9e60ac3bf" name="Default Changelist" comment="" />
+      <created>1586603457784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586603457784</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="24" key="#Notifications" timestamp="1596174569028">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="24" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1596174569028" />
+    <state x="462" y="108" key="FileChooserDialogImpl" timestamp="1596174533474">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596174533474" />
+    <state x="509" y="280" key="Github.CreateGistDialog" timestamp="1596175152240">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="509" y="280" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1596175152240" />
+    <state width="1344" height="113" key="GridCell.Tab.0.bottom" timestamp="1595345452224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595345452224" />
+    <state width="1344" height="113" key="GridCell.Tab.0.center" timestamp="1595345452224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="113" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595345452224" />
+    <state width="1344" height="113" key="GridCell.Tab.0.left" timestamp="1595345452224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="113" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595345452224" />
+    <state width="1344" height="113" key="GridCell.Tab.0.right" timestamp="1595345452224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="113" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595345452224" />
+    <state width="1344" height="216" key="GridCell.Tab.1.bottom" timestamp="1592241507806">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592241507806" />
+    <state width="1344" height="216" key="GridCell.Tab.1.center" timestamp="1592241507806">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592241507806" />
+    <state width="1344" height="216" key="GridCell.Tab.1.left" timestamp="1592241507790">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592241507790" />
+    <state width="1344" height="216" key="GridCell.Tab.1.right" timestamp="1592241507806">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1344" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592241507806" />
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596173995816">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596173995816" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1596092577243">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1596092577243" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595342244090">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595342244090" />
+  </component>
+</project>

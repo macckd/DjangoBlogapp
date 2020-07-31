@@ -1,0 +1,139 @@
+{% extends 'admsbase.html' %}
+
+{% block title %} User Detail {% endblock title %}
+{% block admsuseractive %} User Detail {% endblock admsuseractive %}
+{% block body %}
+ <div class="d-flex">
+   <div>
+      <h2>Users Details</h2>
+   </div>
+   <div class="ml-auto">
+        <form method="get" action="/adms/usersearch" class="form-inline my-2 my-lg-0 mx-3 ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#exampleModalCenter">Search</button>
+    </form>
+   </div>
+ </div>
+   <div class="table-responsive">
+        <table  class="table table-striped table-sm">
+          <thead>
+            <tr>
+                <th>id</th>
+              <th>username</th>
+              <th>First Name</th>
+              <th>Last name</th>
+              <th>Email</th>
+              <th>password</th>
+              <th>date-join</th>
+              <th>last login</th>
+              <th>staff/not</th>
+              <th>active/not</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          {% for users in allusers %}
+            <tr>
+                <td>{{users.id}}</td>
+              <td>{{users.username}}</td>
+              <td>{{users.first_name}}</td>
+              <td>{{users.last_name}}</td>
+              <td>{{users.email}}</td>
+              <td>{{users.password|truncatechars:10 }}</td>
+              <td>{{users.date_joined}}</td>
+              <td>{{users.last_login}}</td>
+              <td>{{users.is_staff}}</td>
+              <td>{{users.is_active}}</td>
+              <td>
+                <a href="userdelete/{{users.id}}" class="btn btn-danger" role="button">Delete</a>
+                <!-- Button trigger modal -->
+                 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  delete
+                  </button> -->
+
+              </td>
+            </tr>
+          {% endfor %}
+
+          </tbody>
+        </table>
+
+<!-- Modal -->
+<!--
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">DELETE ENTRY</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% if allPosts|length < 1 %}
+        no such result
+        {% endif %}
+
+<table  class="table table-striped table-sm">
+          <thead>
+            <tr>
+                <th>id</th>
+              <th>username</th>
+              <th>First Name</th>
+              <th>Last name</th>
+              <th>Email</th>
+              <th>password</th>
+              <th>date-join</th>
+              <th>last login</th>
+              <th>staff/not</th>
+              <th>active/not</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          {% for users in allusers %}
+            <tr>
+                <td>{{users.id}}</td>
+              <td>{{users.username}}</td>
+              <td>{{users.first_name}}</td>
+              <td>{{users.last_name}}</td>
+              <td>{{users.email}}</td>
+              <td>{{users.password|truncatechars:10 }}</td>
+              <td>{{users.date_joined}}</td>
+              <td>{{users.last_login}}</td>
+              <td>{{users.is_staff}}</td>
+              <td>{{users.is_active}}</td>
+              <td>
+                <a href="userdelete/{{users.id}}" class="btn btn-danger" role="button">Delete</a> -->
+   <!-- Button trigger modal -->
+                 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  delete
+                  </button> -->
+<!--
+              </td>
+            </tr>
+          {% endfor %}
+
+          </tbody>
+        </table>
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="adms/userdelete/{{ user.id }}" class="btn btn-danger" role="button">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+      </div>
+
+{% endblock body%}

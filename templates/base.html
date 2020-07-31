@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title> {% block title %} {% endblock title %}</title>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+    <style>
+      a {
+    color: #28a745;
+    text-decoration: none;
+    background-color: transparent;
+}
+    </style>
+  </head>
+  <body  class="bg-white">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">iCoder</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item {% block homeactive %} {% endblock homeactive %}">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item {% block aboutactive %} {% endblock aboutactive %}">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+
+      <li class="nav-item {% block blogactive %} {% endblock blogactive %}">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+
+      <li class="nav-item {% block contactactive %} {% endblock contactactive %}">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+    <form method="get" action="/search" class="form-inline my-2 my-lg-0 mx-3 ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+    {% if user.is_authenticated %}
+    <ul class="nav nav-mr-auto">
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Welcome {{request.user}}</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="/change-password">Change Password</a>
+      <a class="dropdown-item" href="/logout">Logout</a>
+    </div>
+    </li></ul>
+
+    {% else %}
+    <!-- Button trigger login modal -->
+    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#loginModal">
+      Login
+    </button>
+      <!-- Button trigger signup modal -->
+    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#signupModal">
+      SignUp
+    </button>
+    {% endif %}
+
+  </div>
+</nav>
+
+
+  {% for message in messages %}
+  <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message : </strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endfor %}
+
+<!-- Singnup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModaltitle">SignUp Here</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form action="/signup" method="post">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Choose your unique Username" required>
+          </div>
+          <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" class="form-control" name="fname" id="fname" placeholder="Firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" class="form-control" name="lname" id="lname" placeholder="Lastname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="pass1">Password</label>
+            <input type="password" class="form-control" name="pass1" id="pass1" placeholder="choose your Password" required>
+          </div>
+          <div class="form-group">
+            <label for="pass2">Confirm Password</label>
+            <input type="password" class="form-control" name="pass2" id="pass2" placeholder="Enter your Password" required>
+          </div>
+          {% csrf_token %}
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModaltitle">SignUp Here</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form action="/login" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="loginusername">Username:</label>
+            <input type="text" class="form-control" name="loginusername" id="loginusername" placeholder="Choose your unique Username (Lowercase & Alphanumric)" required>
+          </div>
+          <div class="form-group">
+            <label for="loginpassword">Password</label>
+            <input type="password" class="form-control" name="loginpassword" id="loginpassword" placeholder="Enter your Password" required>
+          </div>
+
+           <div class="d-flex">
+            <div>
+                <a href="/password-reset">Forgot password</a>
+            </div>
+            <div class="ml-auto">
+                <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
+            </div>
+        </div>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% block body %} {% endblock body%}
+
+  <!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div style="background-color: #28a745;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0 text-white ">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">iCoder</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="/">Home</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/blog">Blog</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/about">About</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/contact">Contact</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Social links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Facebook</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">twitter</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Linked In</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Github</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i>India, Maharashtra, Mumbai</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>icoder@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>+ 9167101337</p>
+        <p>
+          <i class="fas fa-print mr-3"></i>+ 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-1">© 2020 Copyright:
+    <a class="dark-grey-text" href="/"> iCoder.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

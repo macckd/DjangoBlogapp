@@ -1,0 +1,147 @@
+{% extends 'admsbase.html' %}
+
+{% block title %} Edit Blog {% endblock title %}
+
+{% block css %}
+      body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: Arial;
+}
+
+input[type=text], [type=number]{
+	display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+ textarea{
+  display: block;
+    width: 100%;
+    height: calc(8.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+{% endblock %}
+
+  {% block body %}
+
+
+
+
+
+    <!-- Update form -->
+<div class='container my-3'>
+  <h3>Edit Blog</h3>
+
+   <!-- <form method="POST"  action="/update/{{allposts.sno}}">
+        {% csrf_token %}
+ <div class="form-group">
+    <label for="blogtitle">Title</label>
+    <input type="text" class="form-control" name="blogtitle" id="blogtitle" value="{{allposts.title}}">
+  </div>
+  <div class="form-group">
+    <label for="blogauther">Auther</label>
+    <input type="text" class="form-control" name="blogauther" id="blogauther" value="{{allposts.author}}">
+  </div>
+  <div class="form-group">
+    <label for="blogurl">vanity_url</label>
+    <input type="text" class="form-control" name="blogurl" id="blogurl" value="{{allposts.slug}}">
+  </div>
+  <div class="form-group">
+    <label for="blogcontent">Content</label>
+    <textarea class="form-control" name="blogcontent" id="blogcontent" rows="3">{{allposts.content}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="blogtime">Time Detail</label>
+    <input type="text" class="form-control" name="blogtime" id="blogtime" value="{{allposts.timeStamp}}">
+  </div>
+
+    <div class="form-group">
+      <label for="blogimg1">Small Image</label>
+      <div class="btn btn-online-primary">
+        <input class="form-control-btn btn-light" name="blogimg1" id="blogimg1" type="file">if you want to chenge small image please browse image <b>Last Small image:</b> {{allposts.image1}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="blogimg2">Large Image</label>
+      <div class="btn btn-online-primary">
+        <input class="form-control-btn btn-light" type="file" name="blogimg2" id="blogimg2" value="name">if you want to chenge large image please browse image <b>Last Large image:</b> {{allposts.image2}}
+      </div>
+    </div>
+
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+
+
+</div>
+
+</form> -->
+
+
+{{postq.title}}
+
+<form method= 'POST' enctype="multipart/form-data">
+{% csrf_token %}
+
+<!-- {{ form.as_p }} -->
+
+    {% for field in post_form %}
+
+                {{field.label }}
+                {{ field }}
+            <br>
+
+            {% endfor %}
+        <br>
+
+
+<input type="submit" value="Edit Post">
+</form>
+<br/><br/>
+
+
+
+</div>
+
+{% endblock body%}

@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: Arial;
+}
+
+input[type=text], [type=number]{
+	display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+ textarea{
+  display: block;
+    width: 100%;
+    height: calc(8.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+}
+
+</style>
+</head>
+<body>
+<form action="" method="POST">
+<input type="hidden" name="csrfmiddlewaretoken" value="PVLiLgFk0AmxEsqVrBzRdHsgyep7mt6gwE5p5CthhoEIsyWe1gpgX0gtO9EWO0mH">
+  <table>
+<tbody><tr><th><label for="id_title">Title:</label></th><td><input type="text" name="title" value="1 Choose the perfect design" maxlength="255" required="" id="id_title"></td></tr>
+<tr><th><label for="id_content">Content:</label></th><td><textarea name="content" cols="40" rows="10" required="" id="id_content">At this point, you have researched your competitors and determined the demographic that you want to target. It is time to stop analyzing the niche and start writing!
+
+You can use your competitors’ blog posts as a general template, but don’t limit yourself to their writing style. You should write content that offers more value and detail. You may find that many of your competitors are ranking on the front page with articles that are only a few hundred words long. This is often because they have a high domain authority or are lucky enough to have found some keywords with little competition.
+
+If you really want to dive into the world of aggressive content creation, SEO and promotion, then you need to try a tool called BuzzSumo. Not only will it provide you with the top ranking, performing, and shared content for whatever you might be searching for, it also provides you with the tools and features to reverse-engineer the process as well… ultimately allowing you to create the best content possible.
+
+
+
+You will need to raise the bar if you want to outrank some of the top sites online for many reasons, but specifically, because you are likely running a newer blog and have a smaller digital footprint with Google. Think of ways that you can create longer posts without diluting your site with thin content. While many bloggers and brands are just looking at SEO rankings and visitor numbers, not paying attention to what users are doing when they actually hit your site could be detrimental to your growth.
+
+No matter if it’s creating content for your site, or how to improve user experience, always keep your readers’ needs in mind as you attempt to grow out your site. You are going to get more return visitors and earn more backlinks by creating content that solves complex problems that other bloggers haven’t addressed as thoroughly.
+
+Also, make sure your posts are properly cited with links to authoritative sources. This will prove that you did your research, instead of making things up and hoping that nobody would check.
+
+4. Go live with your article then start promoting it
+A couple of months after you launch your blog, you may have written a dozen amazing posts. But you feel frustrated that nobody is visiting your blog yet. If creating great content is so important, shouldn’t your blog be taking off by now?
+
+While creating great content is important, it will only be an asset if people find it. Think of your blog post like diamonds on an uncharted island. They won’t be valuable to anybody if they are never discovered.
+
+When it comes to the promotion of your content, there are way too many methods to choose from. We could actually write a whole guide on content promotion itself. Instead, we can simply refer to this content promotion guide from Buffer, as they did a great job at covering all of the basics and more</textarea></td></tr>
+<tr><th><label for="id_author">Author:</label></th><td><input type="text" name="author" value="macc" maxlength="13" required="" id="id_author"></td></tr>
+<tr><th><label for="id_slug">Slug:</label></th><td><input type="text" name="slug" value="first_blog1" maxlength="130" required="" id="id_slug"></td></tr>
+<tr><th><label for="id_timeStamp">TimeStamp:</label></th><td><input type="text" name="timeStamp" value="2020-03-29 18:09:05" id="id_timeStamp"></td></tr>
+<tr><th><label for="id_views">Views:</label></th><td><input type="number" name="views" value="0" required="" id="id_views"></td></tr>
+<tr><th><label for="id_image1">Image1:</label></th><td>Currently: <a href="/media/images/Blog.jpg">images/Blog.jpg</a><br>
+Change:
+<input type="file" name="image1" accept="image/*" id="id_image1"></td></tr>
+<tr><th><label for="id_image2">Image2:</label></th><td>Currently: <a href="/media/images/1.jpg">images/1.jpg</a><br>
+Change:
+<input type="file" name="image2" accept="image/*" id="id_image2"></td></tr>
+  </tbody></table>
+<input type="submit" value="Edit Post">
+<button type="submit" class="save btn btn-default">Save</button>
+</form>
+</body>
+</html>
